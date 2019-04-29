@@ -1,0 +1,19 @@
+[package]
+name = "wasm-plugin-runner"
+version = "0.1.0"
+authors = ["Mackenzie Clark <mackenzie.a.z.c@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+# there is an issue with wasmer-wasi crate, so using latest master locally
+wasmer-wasi = { path = "../../../../dec/wasmer/lib/wasi" }
+wasm-data = { path = "../wasm-data" }
+wasmer-runtime = {path = "../../../../dec/wasmer/lib/runtime"}
+serde_json = "^1.0"
+serde = "^1.0"
+serde_derive = "^1.0"
+
+[features]
+prod = []
+dev = []
+default = ["dev"]

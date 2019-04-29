@@ -1,0 +1,7 @@
+[package]
+name = "rust_wasi_plugin_experiment"
+version = "0.1.1"
+description = "An experiment of making wasm+wasi plugins"
+
+[dependencies]
+"xmclark/rust_wasi_plugin_experiment_plugin_foo" = "0.1.1"

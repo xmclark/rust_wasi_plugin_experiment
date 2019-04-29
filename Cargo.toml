@@ -1,0 +1,20 @@
+[package]
+name = "rust_wasi_plugin_experiment_plugin_foo"
+version = "0.1.0"
+authors = ["Mackenzie Clark <mackenzie.a.z.c@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+wasm-plugin-runner = { path = "./crates/wasm-plugin-runner" }
+
+[workspace]
+members = [
+    "./crates/wasm-plugin-foo",
+    "./crates/wasm-data",
+    "./crates/wasm-plugin-runner",
+]
+
+[features]
+prod = ["wasm-plugin-runner/prod"]
+dev = ["wasm-plugin-runner/dev"]
+default = ["dev"]

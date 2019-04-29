@@ -1,0 +1,9 @@
+[package]
+name = "xmclark/rust_wasi_plugin_experiment_plugin_foo"
+version = "0.1.1"
+description = "An experiment of making wasm+wasi plugins"
+
+[[module]]
+name = "wasm-plugin-foo"
+source = "../../target/wasm32-unknown-wasi/release/wasm-plugin-foo.wasm"
+
