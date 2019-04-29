@@ -12,6 +12,7 @@ members = [
     "./crates/wasm-plugin-foo",
     "./crates/wasm-data",
     "./crates/wasm-plugin-runner",
+    "./crates/wasm-plugin-macro",
 ]
 
 [features]

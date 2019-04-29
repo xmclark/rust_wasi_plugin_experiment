@@ -6,4 +6,4 @@ edition = "2018"
 
 [dependencies]
 wasm-data = { path = "../wasm-data" }
-wasmer-plugin = { git = "https://github.com/FreeMasen/wasmer-plugin.git"}
+wasm-plugin-macro = { path = "../wasm-plugin-macro" }
